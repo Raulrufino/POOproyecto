@@ -32,8 +32,44 @@
                 <button type="submit">Nuevo Curso</button>
             </form>
 
+            <!--FORMULARIO PARA ALUMNOS Y PROFESORES QUE IMPARTEN LAS CLASES-->
+            <form id="formAlumnos" class="formAlumnos">
+                <label>
+                    Nombre del alumno:
+                    <input type="text" name="nombreAlumno" required />
+                </label>
+                <label>
+                    Foto del alumno:
+                    <input type="text" name="fotoAlumno" required />
+                </label>
+                <label>
+                    Edad del alumno 
+                    <input type="number" name="edad" required />
+                </label>
+                <button type="submit">Nuevo alumno</button>
+            </form>
+            <!--FORMULARIO PARA NUEVOS PROFESORES QUE IMPARTEN LAS CLASES-->
+            <form id="formProfesor" class="formProfesor">
+                <label>
+                    Nombre del profesor:
+                    <input type="text" name="nombreProfesor" required />
+                </label>
+                <label>
+                    Foto del profesor:
+                    <input type="text" name="fotoProfesor" required />
+                </label>
+                <label>
+                    En que rama esta especializado
+                    <input type="text" name="nombreCurso" required />
+                </label>
+                <button type="submit">Nuevo Profesor</button>
+            </form>
             <!-- GRID de Cursos -->
             <section id="curso" class="cursos"></section>
+            <!--GRID de NuevosAlumnos-->
+            <section id="gridAlumnos" class="gridAlumnos"></section>
+            <!--GRID de NuevosProfesores-->
+            <section id="gridProfesor" class="gridProfesor"></section>
         </main>
 
         <script type="module" src="./js/index.js"></script>

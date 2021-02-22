@@ -8,6 +8,7 @@ body{
 img{
     width: 100%;
 }
+/*Grid profesores */
 .cursos{
     width: 80vw;
     display: grid;
@@ -24,4 +25,19 @@ img{
 }
 .card:hover{
     box-shadow: 5px 3px 10px rgb(123, 123, 123);
+}
+
+/* Grid Alumnos*/
+.gridAlumnos{
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+/* Grid Profesores*/
+.gridProfesor{
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
 }
