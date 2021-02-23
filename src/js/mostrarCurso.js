@@ -5,9 +5,9 @@ export function mostrarCurso(tipoCurso) {
     const card = document.createElement('div')
     card.classList.add('card')
     card.innerHTML = `
-    <img src="${tipoCurso.getFoto()}"/>
+    <img src="${tipoCurso.getPoster()}"/>
     <h3>${tipoCurso.getNombre()}</h3>
-    <h5>Cantidad de horas: ${tipoCurso.get()}h.</h5>
+    <h5>Cantidad de horas: ${tipoCurso.getClases()}h.</h5>
     `
     // agregar como hijo de curso
     elemCursos.appendChild(card)
