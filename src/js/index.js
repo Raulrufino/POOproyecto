@@ -29,16 +29,16 @@ formulario.addEventListener('submit', evento => {
 
 //acceder al formulario de html
 
-const formularioAlumnos = document.getElementById('formAlumnos')
+const formAlumnos = document.getElementById('formAlumnos')
 
 formAlumnos.addEventListener('submit', evento => {
     evento.preventDefault()
 
     const formObtenido = evento.target
 
-    const Alumno = new mostrarAlumno(formObtenido.nombreAlumno.value, formObtenido.fotoAlumno.value, formObtenido.edad.value)
+    const Alumno = new Alumnos(formObtenido.nombreAlumno.value, formObtenido.fotoAlumno.value, formObtenido.edad.value)
     
-    Alumnos(Alumno)
+    mostrarAlumno(Alumno)
 
     formObtenido.reset()
 })
