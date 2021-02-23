@@ -1,4 +1,4 @@
-export class Cursos{
+export class Profesores{
     constructor(nombre, foto, curso){
         this.nombre = nombre
         this.foto = foto

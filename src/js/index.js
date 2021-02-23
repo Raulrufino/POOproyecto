@@ -3,6 +3,9 @@ import { Cursos } from './Cursos.js'
 import { mostrarCurso } from './mostrarCurso.js'
 import { Alumnos } from './Alumnos.js'
 import { mostrarAlumno } from './mostrarAlumno.js'
+import { mostrarProfesor } from './mostrarProfesor.js'
+import { Profesores } from './Profesores.js'
+
 
 
 // acceder al elemento de HTML
@@ -31,14 +34,36 @@ formulario.addEventListener('submit', evento => {
 
 const formAlumnos = document.getElementById('formAlumnos')
 
+//funcion alumnos
+
 formAlumnos.addEventListener('submit', evento => {
     evento.preventDefault()
 
     const formObtenido = evento.target
 
-    const Alumno = new Alumnos(formObtenido.nombreAlumno.value, formObtenido.fotoAlumno.value, formObtenido.edad.value)
+    const Alumno = new Alumnos(formObtenido.nombreAlumno.value, formObtenido.fotoAlumno.value, formObtenido.edad.value )
     
     mostrarAlumno(Alumno)
 
+    formObtenido.reset()
+})
+
+
+//acceder al formulario de profesores
+
+const formProfesor = document.getElementById('formProfesor')
+
+//escuchar el envio del formulario
+formProfesor.addEventListener('submit', evento =>{
+    // hacer que el formulario no se ejecute
+    evento.preventDefault()
+    //recoger el formulario
+    const formObtenido = evento.target
+
+    // crear el nuevo profesor
+    const fichaProfesor = new Profesores(formObtenido.nombreProfesor.value, formObtenido.fotoProfesor.value, formObtenido.nombreCurso.value)
+    // mostrar curso
+    mostrarProfesor(fichaProfesor)
+    //refrescar formulario
     formObtenido.reset()
 })

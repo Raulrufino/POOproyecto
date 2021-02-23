@@ -6,8 +6,8 @@ export function mostrarAlumno(ficha) {
     card.classList.add('card')
     card.innerHTML = `
     <img src="${ficha.getFoto()}"/>
-    <h3>${ficha.getNombre()}</h3>
-    <h5>Edad del alumno: ${ficha.getEdad()}Años.</h5>
+    <h3>Nombre: ${ficha.getNombre()}</h3>
+    <h5>Edad del alumno: ${ficha.getEdad()} Años</h5>
     `
     // agregar como hijo de curso
     fichaAlumno.appendChild(card)
