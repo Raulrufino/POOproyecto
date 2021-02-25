@@ -10,11 +10,11 @@ export class Cursos{
     getNombre() { return this.nombre}
     getPoster() { return this.poster}
     getClases() { return this.clases}
-    getIncritos() { return this.inscritos}
+    getInscritos() { return this.inscritos}
 
     // setters
     setNombre(nombre) { this.nombre = nombre}
     setPoster(poster) { this.poster = poster}
     setClases(clases) { this.clases = clases}
-    setIncritos(inscritos) { this.inscritos = inscritos}
+    setInscritos(inscritos) { this.inscritos = inscritos}
 }

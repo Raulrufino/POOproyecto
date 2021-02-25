@@ -7,6 +7,7 @@ export function mostrarAlumno(ficha) {
     card.innerHTML = `
     <img src="${ficha.getFoto()}"/>
     <h3>Nombre: ${ficha.getNombre()}</h3>
+    <h3>Apellidos: ${ficha.getApellidos()}</h3>
     <h5>Edad del alumno: ${ficha.getEdad()} Años</h5>
     `
     // agregar como hijo de curso

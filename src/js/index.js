@@ -41,7 +41,7 @@ formAlumnos.addEventListener('submit', evento => {
 
     const formObtenido = evento.target
 
-    const Alumno = new Alumnos(formObtenido.nombreAlumno.value, formObtenido.fotoAlumno.value, formObtenido.edad.value )
+    const Alumno = new Alumnos(formObtenido.nombreAlumno.value, formObtenido.apellidosAlumno.value, formObtenido.fotoAlumno.value, formObtenido.edad.value )
     
     mostrarAlumno(Alumno)
 
@@ -61,7 +61,7 @@ formProfesor.addEventListener('submit', evento =>{
     const formObtenido = evento.target
 
     // crear el nuevo profesor
-    const fichaProfesor = new Profesores(formObtenido.nombreProfesor.value, formObtenido.fotoProfesor.value, formObtenido.nombreCurso.value)
+    const fichaProfesor = new Profesores(formObtenido.nombreProfesor.value, formObtenido.apellidosProfesor.value, formObtenido.fotoProfesor.value, formObtenido.nombreCurso.value)
     // mostrar curso
     mostrarProfesor(fichaProfesor)
     //refrescar formulario

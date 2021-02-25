@@ -9,11 +9,12 @@ img{
     width: 100%;
 }
 /*Grid profesores */
-.cursos{
+.curso, .gridAlumnos, .gridProfesor{
     width: 80vw;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
+    padding: 50px;
 }
 
 /* CARD */
@@ -27,17 +28,6 @@ img{
     box-shadow: 5px 3px 10px rgb(123, 123, 123);
 }
 
-/* Grid Alumnos*/
-.gridAlumnos{
-    width: 80vw;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-}
-/* Grid Profesores*/
-.gridProfesor{
-    width: 80vw;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+h1{
+    border-bottom: 4px solid black;
 }
